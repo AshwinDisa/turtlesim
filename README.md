@@ -22,7 +22,7 @@ Run turtlesim
 	
 	$ rosrun turtlesim turtlesim_node
 	
-Run a script for example spiral
+Run a script for example the spiral_node
 
 	$ rosrun turtlesim_motion turtlesim_spiral_node
 
