@@ -10,12 +10,10 @@ find_package(catkin REQUIRED COMPONENTS
 
 add_message_files(
   FILES
-  iotSensor.msg
 )
 
 add_service_files(
   FILES 
-  Addtwoints.srv
 )
 
 generate_messages(
@@ -33,20 +31,6 @@ catkin_package(
 include_directories(
   ${catkin_INCLUDE_DIRS}
 )
-
-add_executable(talker_node_2 src/talker_listener/talker.cpp)
-target_link_libraries(talker_node_2 ${catkin_LIBRARIES})
-
-add_executable(listener_node_2 src/talker_listener/listener.cpp)
-target_link_libraries(listener_node_2 ${catkin_LIBRARIES})
-
-add_executable(server_node src/server_client/add_server.cpp)
-target_link_libraries(server_node ${catkin_LIBRARIES})
-add_dependencies(server_node cpp_prac_gencpp)
-
-add_executable(client_node src/server_client/add_client.cpp)
-target_link_libraries(client_node ${catkin_LIBRARIES})
-add_dependencies(client_node cpp_prac_gencpp)
 
 add_executable(turtlesim_move_node src/turtlesim/move.cpp)
 target_link_libraries (turtlesim_move_node ${catkin_LIBRARIES})
