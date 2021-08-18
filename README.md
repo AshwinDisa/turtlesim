@@ -1,4 +1,4 @@
-# Turtlesim motion
+# Follow the steps to run Turtlesim node with motion
 
 Install turtlesim package
 
