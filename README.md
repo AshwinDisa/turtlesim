@@ -1,4 +1,4 @@
-# Simple turtlesim motion
+# Turtlesim motion
 
 Start the roscore
 
